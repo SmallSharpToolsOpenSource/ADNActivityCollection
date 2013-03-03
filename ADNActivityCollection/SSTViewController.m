@@ -53,9 +53,6 @@
 }
 
 - (void)shareContent {
-    // TODO implement
-    NSLog(@"Share");
-    
     NSArray *activityItems = nil;
     
     if ([self hasContent] && [self hasURL]) {

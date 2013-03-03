@@ -109,6 +109,13 @@
 - (NSURL *)clientOpenURL {
     if (self.clientURLScheme != nil) {
         NSString *urlString = [NSString stringWithFormat:@"%@/post?text=%@", self.clientURLScheme, self.encodedText];
+        NSString *appURLScheme = [self appURLScheme];
+        if (appURLScheme != nil) {
+            urlString = [NSString stringWithFormat:@"%@&returnURLScheme=%@", urlString, [self encodeText:appURLScheme]];
+        }
+#ifndef NDEBUG
+        NSLog(@"clientOpenURL: %@", urlString);
+#endif
         NSURL *openURL = [NSURL URLWithString:urlString];
         return openURL;
     }

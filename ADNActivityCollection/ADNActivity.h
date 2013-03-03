@@ -15,5 +15,8 @@
 @property (readonly) NSString *clientURLScheme;
 @property (readonly) BOOL isClientInstalled;
 @property (readonly) NSURL *clientOpenURL;
+@property (readonly) NSString *appURLScheme;
+
+- (NSString *)encodeText:(NSString *)text;
 
 @end

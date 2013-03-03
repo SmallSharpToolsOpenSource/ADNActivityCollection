@@ -45,7 +45,7 @@
         NSString *urlString = [NSString stringWithFormat:@"%@/?post=%@", self.clientURLScheme, self.encodedText];
         NSString *appURLScheme = [self appURLScheme];
         if (appURLScheme != nil) {
-            urlString = [NSString stringWithFormat:@"%@&returnURLScheme=%@", urlString, appURLScheme];
+            urlString = [NSString stringWithFormat:@"%@&returnURLScheme=%@", urlString, [self encodeText:appURLScheme]];
         }
 #ifndef NDEBUG
         NSLog(@"clientOpenURL: %@", urlString);
@@ -57,8 +57,20 @@
     return nil;
 }
 
-#pragma mark - Private
-#pragma mark -
+- (NSString *)appURLScheme {
+    NSArray *urlTypes = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleURLTypes"];
+    if (urlTypes.count > 0) {
+        NSDictionary *urlType = [urlTypes objectAtIndex:0];
+        NSArray *urlSchemes = [urlType objectForKey:@"CFBundleURLSchemes"];
+        if (urlSchemes.count > 0) {
+            NSString *urlScheme = [urlSchemes objectAtIndex:0];
+            NSLog(@"URL Scheme: %@", urlScheme);
+            return [NSString stringWithFormat:@"%@://", urlScheme];
+        }
+    }
+    
+    return nil;
+}
 
 - (NSString *)encodeText:(NSString *)text {
     if (text == nil) {
@@ -76,21 +88,6 @@
     CFRelease( ref );
     
     return encoded;
-}
-
-- (NSString *)appURLScheme {
-    NSArray *urlTypes = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleURLTypes"];
-    if (urlTypes.count > 0) {
-        NSDictionary *urlType = [urlTypes objectAtIndex:0];
-        NSArray *urlSchemes = [urlType objectForKey:@"CFBundleURLSchemes"];
-        if (urlSchemes.count > 0) {
-            NSString *urlScheme = [urlSchemes objectAtIndex:0];
-            NSLog(@"URL Scheme: %@", urlScheme);
-            return [NSString stringWithFormat:@"%@://", urlScheme];
-        }
-    }
-    
-    return nil;
 }
 
 #pragma mark - UIActivity Override Methods
@@ -200,7 +197,6 @@
 }
 
 - (void)performActivity {
-
 #ifndef NDEBUG
     NSLog(@"Sharing: %@", self.encodedText);
 #endif
