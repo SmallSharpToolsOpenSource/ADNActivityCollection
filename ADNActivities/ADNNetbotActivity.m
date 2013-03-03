@@ -33,7 +33,6 @@
 - (UIImage *)activityImage {
     // return image for Netbot
     UIImage *image = [UIImage imageWithIdentifier:@"NetbotShareActivityImage" forSize:CGSizeMake(43, 43) andDrawingBlock:^{
-
         //// Color Declarations
         UIColor* fillColor = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
         
@@ -52,9 +51,9 @@
         [facePath addLineToPoint: CGPointMake(10.5, 11.5)];
         [facePath addLineToPoint: CGPointMake(10.5, 24.5)];
         [facePath addLineToPoint: CGPointMake(14.5, 28.5)];
-        [facePath addLineToPoint: CGPointMake(26.5, 28.5)];
-        [facePath addLineToPoint: CGPointMake(31.5, 24.5)];
-        [facePath addLineToPoint: CGPointMake(31.5, 11.5)];
+        [facePath addLineToPoint: CGPointMake(27.5, 28.5)];
+        [facePath addLineToPoint: CGPointMake(32.5, 24.5)];
+        [facePath addLineToPoint: CGPointMake(32.5, 11.5)];
         [facePath addLineToPoint: CGPointMake(26.5, 7.5)];
         [facePath closePath];
         [facePath moveToPoint: CGPointMake(22.5, 32.5)];

@@ -98,6 +98,9 @@
 - (UIImage *)activityImage {
     // create an image (drawn using PaintCode) for a generic sharing image
     UIImage *image = [UIImage imageWithIdentifier:@"GenericShareActivityImage" forSize:CGSizeMake(43, 43) andDrawingBlock:^{
+        //// Color Declarations
+        UIColor* fillColor = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
+        
         //// Bezier Drawing
         UIBezierPath* bezierPath = [UIBezierPath bezierPath];
         [bezierPath moveToPoint: CGPointMake(33.75, 29.5)];
@@ -131,7 +134,7 @@
         [bezierPath closePath];
         bezierPath.miterLimit = 4;
         
-        [[UIColor whiteColor] setFill];
+        [fillColor setFill];
         [bezierPath fill];
     }];
     
