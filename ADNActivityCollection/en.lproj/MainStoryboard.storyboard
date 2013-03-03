@@ -10,6 +10,7 @@
                 <navigationController definesPresentationContext="YES" id="0He-fg-Zwa" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mJl-g2-ky7">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="elA-Ww-5SS"/>
@@ -71,6 +72,19 @@
             <point key="canvasLocation" x="-172" y="33"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SSTViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSTViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="shareButtonTapped:"/>
+                <relationship kind="outlet" name="contentTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="urlTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

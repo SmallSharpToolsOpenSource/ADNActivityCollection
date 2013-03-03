@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2640CC1C16E2EBC3005CC965 /* ADNActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640CC1716E2EBC3005CC965 /* ADNActivity.m */; };
+		2640CC1D16E2EBC3005CC965 /* ADNFelixActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640CC1916E2EBC3005CC965 /* ADNFelixActivity.m */; };
+		2640CC1E16E2EBC3005CC965 /* ADNNetbotActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640CC1B16E2EBC3005CC965 /* ADNNetbotActivity.m */; };
+		2640CC2416E2F539005CC965 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2640CC1F16E2F539005CC965 /* Default-568h@2x.png */; };
+		2640CC2516E2F539005CC965 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2640CC2016E2F539005CC965 /* Default.png */; };
+		2640CC2616E2F539005CC965 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2640CC2116E2F539005CC965 /* Default@2x.png */; };
+		2640CC2716E2F539005CC965 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2640CC2216E2F539005CC965 /* Icon.png */; };
+		2640CC2816E2F539005CC965 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2640CC2316E2F539005CC965 /* Icon@2x.png */; };
 		26687F9116E2986400BEE986 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26687F9016E2986400BEE986 /* UIKit.framework */; };
 		26687F9316E2986400BEE986 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26687F9216E2986400BEE986 /* Foundation.framework */; };
 		26687F9516E2986400BEE986 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26687F9416E2986400BEE986 /* CoreGraphics.framework */; };
 		26687F9B16E2986400BEE986 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26687F9916E2986400BEE986 /* InfoPlist.strings */; };
 		26687F9D16E2986400BEE986 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687F9C16E2986400BEE986 /* main.m */; };
 		26687FA116E2986400BEE986 /* SSTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FA016E2986400BEE986 /* SSTAppDelegate.m */; };
-		26687FA316E2986500BEE986 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 26687FA216E2986400BEE986 /* Default.png */; };
-		26687FA516E2986500BEE986 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26687FA416E2986500BEE986 /* Default@2x.png */; };
-		26687FA716E2986500BEE986 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26687FA616E2986500BEE986 /* Default-568h@2x.png */; };
 		26687FAA16E2986500BEE986 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26687FA816E2986500BEE986 /* MainStoryboard.storyboard */; };
 		26687FAD16E2986500BEE986 /* SSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FAC16E2986500BEE986 /* SSTViewController.m */; };
-		26687FB716E2998300BEE986 /* ADNFelixActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FB616E2998300BEE986 /* ADNFelixActivity.m */; };
-		26687FBA16E2999800BEE986 /* ADNNetbotActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FB916E2999800BEE986 /* ADNNetbotActivity.m */; };
-		26687FBD16E299AB00BEE986 /* ADNActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FBC16E299AB00BEE986 /* ADNActivity.m */; };
 		26687FE616E2A06900BEE986 /* BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FC216E2A06900BEE986 /* BBlock.m */; };
 		26687FE816E2A06900BEE986 /* license in Resources */ = {isa = PBXBuildFile; fileRef = 26687FC516E2A06900BEE986 /* license */; };
 		26687FF116E2A06900BEE986 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 26687FD616E2A06900BEE986 /* readme.md */; };
@@ -33,14 +35,20 @@
 		26687FF816E2A06900BEE986 /* UITextField+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FE416E2A06900BEE986 /* UITextField+BBlock.m */; };
 		2668800216E2A39000BEE986 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2668800116E2A39000BEE986 /* StoreKit.framework */; };
 		2668800416E2A3E400BEE986 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2668800316E2A3E400BEE986 /* README.md */; };
-		2668801216E2C95300BEE986 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2668800D16E2C95300BEE986 /* Default-568h@2x.png */; };
-		2668801316E2C95300BEE986 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2668800E16E2C95300BEE986 /* Default.png */; };
-		2668801416E2C95300BEE986 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2668800F16E2C95300BEE986 /* Default@2x.png */; };
-		2668801516E2C95300BEE986 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2668801016E2C95300BEE986 /* Icon.png */; };
-		2668801616E2C95300BEE986 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2668801116E2C95300BEE986 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2640CC1616E2EBC3005CC965 /* ADNActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNActivity.h; path = ADNActivities/ADNActivity.h; sourceTree = SOURCE_ROOT; };
+		2640CC1716E2EBC3005CC965 /* ADNActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNActivity.m; path = ADNActivities/ADNActivity.m; sourceTree = SOURCE_ROOT; };
+		2640CC1816E2EBC3005CC965 /* ADNFelixActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNFelixActivity.h; path = ADNActivities/ADNFelixActivity.h; sourceTree = SOURCE_ROOT; };
+		2640CC1916E2EBC3005CC965 /* ADNFelixActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNFelixActivity.m; path = ADNActivities/ADNFelixActivity.m; sourceTree = SOURCE_ROOT; };
+		2640CC1A16E2EBC3005CC965 /* ADNNetbotActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNNetbotActivity.h; path = ADNActivities/ADNNetbotActivity.h; sourceTree = SOURCE_ROOT; };
+		2640CC1B16E2EBC3005CC965 /* ADNNetbotActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNNetbotActivity.m; path = ADNActivities/ADNNetbotActivity.m; sourceTree = SOURCE_ROOT; };
+		2640CC1F16E2F539005CC965 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		2640CC2016E2F539005CC965 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		2640CC2116E2F539005CC965 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		2640CC2216E2F539005CC965 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
+		2640CC2316E2F539005CC965 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		26687F8D16E2986400BEE986 /* ADNActivityCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADNActivityCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26687F9016E2986400BEE986 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26687F9216E2986400BEE986 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,18 +59,9 @@
 		26687F9E16E2986400BEE986 /* ADNActivityCollection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADNActivityCollection-Prefix.pch"; sourceTree = "<group>"; };
 		26687F9F16E2986400BEE986 /* SSTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTAppDelegate.h; sourceTree = "<group>"; };
 		26687FA016E2986400BEE986 /* SSTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTAppDelegate.m; sourceTree = "<group>"; };
-		26687FA216E2986400BEE986 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		26687FA416E2986500BEE986 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		26687FA616E2986500BEE986 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		26687FA916E2986500BEE986 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		26687FAB16E2986500BEE986 /* SSTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTViewController.h; sourceTree = "<group>"; };
 		26687FAC16E2986500BEE986 /* SSTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTViewController.m; sourceTree = "<group>"; };
-		26687FB516E2998300BEE986 /* ADNFelixActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNFelixActivity.h; path = ADNActivities/ADNFelixActivity.h; sourceTree = SOURCE_ROOT; };
-		26687FB616E2998300BEE986 /* ADNFelixActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNFelixActivity.m; path = ADNActivities/ADNFelixActivity.m; sourceTree = SOURCE_ROOT; };
-		26687FB816E2999800BEE986 /* ADNNetbotActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNNetbotActivity.h; sourceTree = "<group>"; };
-		26687FB916E2999800BEE986 /* ADNNetbotActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNNetbotActivity.m; sourceTree = "<group>"; };
-		26687FBB16E299AB00BEE986 /* ADNActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNActivity.h; sourceTree = "<group>"; };
-		26687FBC16E299AB00BEE986 /* ADNActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNActivity.m; sourceTree = "<group>"; };
 		26687FC116E2A06900BEE986 /* BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBlock.h; sourceTree = "<group>"; };
 		26687FC216E2A06900BEE986 /* BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBlock.m; sourceTree = "<group>"; };
 		26687FC516E2A06900BEE986 /* license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
@@ -83,11 +82,6 @@
 		26687FE416E2A06900BEE986 /* UITextField+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BBlock.m"; sourceTree = "<group>"; };
 		2668800116E2A39000BEE986 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2668800316E2A3E400BEE986 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		2668800D16E2C95300BEE986 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
-		2668800E16E2C95300BEE986 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
-		2668800F16E2C95300BEE986 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
-		2668801016E2C95300BEE986 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
-		2668801116E2C95300BEE986 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,18 +146,15 @@
 		26687F9716E2986400BEE986 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2668800D16E2C95300BEE986 /* Default-568h@2x.png */,
-				2668800E16E2C95300BEE986 /* Default.png */,
-				2668800F16E2C95300BEE986 /* Default@2x.png */,
-				2668801016E2C95300BEE986 /* Icon.png */,
-				2668801116E2C95300BEE986 /* Icon@2x.png */,
+				2640CC1F16E2F539005CC965 /* Default-568h@2x.png */,
+				2640CC2016E2F539005CC965 /* Default.png */,
+				2640CC2116E2F539005CC965 /* Default@2x.png */,
+				2640CC2216E2F539005CC965 /* Icon.png */,
+				2640CC2316E2F539005CC965 /* Icon@2x.png */,
 				26687F9816E2986400BEE986 /* ADNActivityCollection-Info.plist */,
 				26687F9916E2986400BEE986 /* InfoPlist.strings */,
 				26687F9C16E2986400BEE986 /* main.m */,
 				26687F9E16E2986400BEE986 /* ADNActivityCollection-Prefix.pch */,
-				26687FA216E2986400BEE986 /* Default.png */,
-				26687FA416E2986500BEE986 /* Default@2x.png */,
-				26687FA616E2986500BEE986 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,12 +162,12 @@
 		26687FB316E298A200BEE986 /* ADNActivities */ = {
 			isa = PBXGroup;
 			children = (
-				26687FBB16E299AB00BEE986 /* ADNActivity.h */,
-				26687FBC16E299AB00BEE986 /* ADNActivity.m */,
-				26687FB516E2998300BEE986 /* ADNFelixActivity.h */,
-				26687FB616E2998300BEE986 /* ADNFelixActivity.m */,
-				26687FB816E2999800BEE986 /* ADNNetbotActivity.h */,
-				26687FB916E2999800BEE986 /* ADNNetbotActivity.m */,
+				2640CC1616E2EBC3005CC965 /* ADNActivity.h */,
+				2640CC1716E2EBC3005CC965 /* ADNActivity.m */,
+				2640CC1816E2EBC3005CC965 /* ADNFelixActivity.h */,
+				2640CC1916E2EBC3005CC965 /* ADNFelixActivity.m */,
+				2640CC1A16E2EBC3005CC965 /* ADNNetbotActivity.h */,
+				2640CC1B16E2EBC3005CC965 /* ADNNetbotActivity.m */,
 			);
 			name = ADNActivities;
 			sourceTree = "<group>";
@@ -259,18 +250,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				26687F9B16E2986400BEE986 /* InfoPlist.strings in Resources */,
-				26687FA316E2986500BEE986 /* Default.png in Resources */,
-				26687FA516E2986500BEE986 /* Default@2x.png in Resources */,
-				26687FA716E2986500BEE986 /* Default-568h@2x.png in Resources */,
 				26687FAA16E2986500BEE986 /* MainStoryboard.storyboard in Resources */,
 				26687FE816E2A06900BEE986 /* license in Resources */,
 				26687FF116E2A06900BEE986 /* readme.md in Resources */,
 				2668800416E2A3E400BEE986 /* README.md in Resources */,
-				2668801216E2C95300BEE986 /* Default-568h@2x.png in Resources */,
-				2668801316E2C95300BEE986 /* Default.png in Resources */,
-				2668801416E2C95300BEE986 /* Default@2x.png in Resources */,
-				2668801516E2C95300BEE986 /* Icon.png in Resources */,
-				2668801616E2C95300BEE986 /* Icon@2x.png in Resources */,
+				2640CC2416E2F539005CC965 /* Default-568h@2x.png in Resources */,
+				2640CC2516E2F539005CC965 /* Default.png in Resources */,
+				2640CC2616E2F539005CC965 /* Default@2x.png in Resources */,
+				2640CC2716E2F539005CC965 /* Icon.png in Resources */,
+				2640CC2816E2F539005CC965 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +272,6 @@
 				26687F9D16E2986400BEE986 /* main.m in Sources */,
 				26687FA116E2986400BEE986 /* SSTAppDelegate.m in Sources */,
 				26687FAD16E2986500BEE986 /* SSTViewController.m in Sources */,
-				26687FB716E2998300BEE986 /* ADNFelixActivity.m in Sources */,
-				26687FBA16E2999800BEE986 /* ADNNetbotActivity.m in Sources */,
-				26687FBD16E299AB00BEE986 /* ADNActivity.m in Sources */,
 				26687FE616E2A06900BEE986 /* BBlock.m in Sources */,
 				26687FF216E2A06900BEE986 /* SKProductsRequest+BBlock.m in Sources */,
 				26687FF316E2A06900BEE986 /* UIActionSheet+BBlock.m in Sources */,
@@ -295,6 +280,9 @@
 				26687FF616E2A06900BEE986 /* UIGestureRecognizer+BBlock.m in Sources */,
 				26687FF716E2A06900BEE986 /* UIImage+BBlock.m in Sources */,
 				26687FF816E2A06900BEE986 /* UITextField+BBlock.m in Sources */,
+				2640CC1C16E2EBC3005CC965 /* ADNActivity.m in Sources */,
+				2640CC1D16E2EBC3005CC965 /* ADNFelixActivity.m in Sources */,
+				2640CC1E16E2EBC3005CC965 /* ADNNetbotActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +371,7 @@
 				GCC_PREFIX_HEADER = "ADNActivityCollection/ADNActivityCollection-Prefix.pch";
 				INFOPLIST_FILE = "ADNActivityCollection/ADNActivityCollection-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,6 +387,7 @@
 					"-DNDEBUG",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

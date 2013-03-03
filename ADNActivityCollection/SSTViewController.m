@@ -53,6 +53,17 @@
 }
 
 - (void)shareContent {
+    if (![self hasContent] && ![self hasURL]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"No Content"
+                                                        message: @"Please enter a message or a URL before sharing."
+                                                       delegate: nil
+                                              cancelButtonTitle: NSLocalizedString( @"OK", @"" )
+                                              otherButtonTitles: nil];
+        
+        [alert show];
+        return;
+    }
+
     NSArray *activityItems = nil;
     
     if ([self hasContent] && [self hasURL]) {
@@ -65,6 +76,7 @@
         activityItems = @[[NSURL URLWithString:self.urlTextField.text]];
     }
     else {
+        // reduntant catch all
         activityItems = @[];
     }
     
@@ -78,11 +90,8 @@
     
     // Exclude default activity types for demo.
     activityView.excludedActivityTypes = @[
-            UIActivityTypeAssignToContact,
             UIActivityTypePostToWeibo,
             UIActivityTypePrint,
-            UIActivityTypeMail,
-            UIActivityTypeMessage,
             UIActivityTypeSaveToCameraRoll
         ];
     

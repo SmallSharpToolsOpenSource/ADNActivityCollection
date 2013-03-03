@@ -10,12 +10,6 @@
 
 #import "UIImage+BBlock.h"
 
-#pragma mark -  Class Extension
-#pragma mark -
-
-@interface ADNActivity ()
-@end
-
 @implementation ADNActivity
 
 #pragma mark - Public Implementation
@@ -188,6 +182,8 @@
         self.text = link;
     }
     else {
+        // a default just in case but should never be reached
+        NSAssert(FALSE, @"This option should never be reached since canPerformWithActivityItems should return FALSE for this condition.");
         self.text = @"POST!";
     }
 }
