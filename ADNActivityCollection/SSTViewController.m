@@ -11,7 +11,7 @@
 #import "ADNFelixActivity.h"
 #import "ADNNetbotActivity.h"
 
-@interface SSTViewController ()
+@interface SSTViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
@@ -87,6 +87,17 @@
         ];
     
     [self presentViewController:activityView animated:YES completion:nil];
+}
+
+#pragma mark - UITextFieldDelegate
+#pragma mark -
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if ([textField isEqual:self.urlTextField]) {
+        [self shareContent];
+    }
+    
+    return TRUE;
 }
 
 @end

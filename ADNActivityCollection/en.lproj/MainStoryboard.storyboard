@@ -30,7 +30,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5g-ib-TqR" userLabel="Content Text View">
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" type="user" id="jP7-7B-QeE"/>
+                                    <constraint firstAttribute="height" constant="150" type="user" id="Rtx-vG-7dg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -39,12 +39,15 @@
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="9Sz-ik-dIh"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="g5g-ib-TqR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0yC-qb-ONe"/>
-                            <constraint firstItem="nAe-Ah-aiX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="236" id="NLz-31-nEX"/>
+                            <constraint firstItem="nAe-Ah-aiX" firstAttribute="top" secondItem="g5g-ib-TqR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7bG-t9-lP3"/>
                             <constraint firstAttribute="trailing" secondItem="nAe-Ah-aiX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="W3B-Oa-urk"/>
                             <constraint firstAttribute="trailing" secondItem="g5g-ib-TqR" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="h64-eK-TTY"/>
                             <constraint firstItem="g5g-ib-TqR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="rmz-j0-Z2z"/>
@@ -68,19 +71,6 @@
             <point key="canvasLocation" x="-172" y="33"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SSTViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSTViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="shareButtonTapped:"/>
-                <relationship kind="outlet" name="contentTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="urlTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
