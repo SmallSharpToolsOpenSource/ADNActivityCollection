@@ -8,4 +8,5 @@ onto ADN and give users sharing options they want. This sample project will prov
 of activities which will detect if an ADN app is available and make it available as an option if
 it is.
 
-<img src="https://raw.github.com/brennanMKE/ADNActivityCollection/master/ADNActivity.png" width="200px" alt="Screenshot" />
+<img src="https://raw.github.com/brennanMKE/ADNActivityCollection/master/ADNActivity.png" width="320px" alt="Screenshot" />
+
