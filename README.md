@@ -12,8 +12,8 @@ it is. (See Screenshot below)
 
 The sources files you would need are in the ADNActivities folder. There is the base class and
 the Felix and Netbot activities. The images used for the icons are drawn in code thanks to
-(PaintCode)[http://www.paintcodeapp.com/] so there are not resources you need to add or manage
-in your project. You will need (BBlock)[https://github.com/kgn/BBlock] to your project. Just
+[PaintCode](http://www.paintcodeapp.com/) so there are not resources you need to add or manage
+in your project. You will need [BBlock](https://github.com/kgn/BBlock) to your project. Just
 load the iOS sources files since it also includes Mac source files as well. What is used is
 the UIImage+BBlock category for drawing images using code provided by PaintCode. You could
 simply add just the header and implementation file for that category. The entire project from
@@ -31,8 +31,8 @@ to share on ADN.
 More apps can be supported. All that is needed is a URL Scheme with a way to send a new post
 over to the app. Both Felix and Netbot had support already as you can see from the following pages.
 
- * (Felix)[http://tigerbears.com/felix/urls.html]
- * (Netbot)[http://tapbots.com/blog/development/tweetbot-url-scheme] (Same as Tweetbot)
+ * [Felix](http://tigerbears.com/felix/urls.html)
+ * [Netbot](http://tapbots.com/blog/development/tweetbot-url-scheme) (Same as Tweetbot)
 
 ## Return URL Scheme
 
@@ -62,7 +62,7 @@ they appear to be ready to be included with the collection.
 Issue tracking on GitHub can be used for any issues which come up. Otherwise I can be found on ADN. 
 
 Brennan Stehling  
-(@smallsharptools)[http://alpha.app.net/smallsharptools]
+[@smallsharptools](http://alpha.app.net/smallsharptools)
 
 ## Screenshot
 
