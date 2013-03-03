@@ -10,24 +10,100 @@
 
 #import "UIImage+BBlock.h"
 
-@implementation ADNActivity
-
-#pragma mark - Override Methods
+#pragma mark -  Class Extension
 #pragma mark -
 
-// default returns nil. subclass may override to return custom activity type that is reported to completion handler
+@interface ADNActivity ()
+@end
+
+@implementation ADNActivity
+
+#pragma mark - Public Implementation
+#pragma mark -
+
+- (NSString *)encodedText {
+    return [self encodeText:self.text];
+}
+
+- (NSString *)clientURLScheme {
+    // override with Client URL Scheme
+    return nil;
+}
+
+- (BOOL)isClientInstalled {
+    if (self.clientURLScheme != nil) {
+        NSURL *url = [NSURL URLWithString:self.clientURLScheme];
+        return [[UIApplication sharedApplication] canOpenURL:url];
+    }
+    
+    return FALSE;
+}
+
+- (NSURL *)clientOpenURL {
+    // reference only for implementing class
+    if (self.clientURLScheme != nil) {
+        NSString *urlString = [NSString stringWithFormat:@"%@/?post=%@", self.clientURLScheme, self.encodedText];
+        NSString *appURLScheme = [self appURLScheme];
+        if (appURLScheme != nil) {
+            urlString = [NSString stringWithFormat:@"%@&returnURLScheme=%@", urlString, appURLScheme];
+        }
+#ifndef NDEBUG
+        NSLog(@"clientOpenURL: %@", urlString);
+#endif
+        NSURL *openURL = [NSURL URLWithString:urlString];
+        return openURL;
+    }
+    
+    return nil;
+}
+
+#pragma mark - Private
+#pragma mark -
+
+- (NSString *)encodeText:(NSString *)text {
+    if (text == nil) {
+        return nil;
+    }
+    
+    CFStringRef ref = CFURLCreateStringByAddingPercentEscapes( NULL,
+                                                              (CFStringRef)text,
+                                                              NULL,
+                                                              (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                              kCFStringEncodingUTF8 );
+    
+    NSString *encoded = [NSString stringWithString: (__bridge NSString *)ref];
+    
+    CFRelease( ref );
+    
+    return encoded;
+}
+
+- (NSString *)appURLScheme {
+    NSArray *urlTypes = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleURLTypes"];
+    if (urlTypes.count > 0) {
+        NSDictionary *urlType = [urlTypes objectAtIndex:0];
+        NSArray *urlSchemes = [urlType objectForKey:@"CFBundleURLSchemes"];
+        if (urlSchemes.count > 0) {
+            NSString *urlScheme = [urlSchemes objectAtIndex:0];
+            NSLog(@"URL Scheme: %@", urlScheme);
+            return [NSString stringWithFormat:@"%@://", urlScheme];
+        }
+    }
+    
+    return nil;
+}
+
+#pragma mark - UIActivity Override Methods
+#pragma mark -
+
 - (NSString *)activityType {
-    // TODO implement
-    return nil;
+    return [NSString stringWithFormat:@"UIActivityTypePostTo%@", [self activityTitle]];
 }
 
-// default returns nil. subclass must override and must return non-nil value
 - (NSString *)activityTitle {
-    // TODO implement
-    return nil;
+    return @"ADN";
 }
 
-// default returns nil. subclass must override and must return non-nil value
 - (UIImage *)activityImage {
     // create an image (drawn using PaintCode) for a generic sharing image
     UIImage *image = [UIImage imageWithIdentifier:@"GenericShareActivityImage" forSize:CGSizeMake(43, 43) andDrawingBlock:^{
@@ -71,29 +147,66 @@
     return image;
 }
 
-// override this to return availability of activity based on items. default returns NO
-- (BOOL)canPerformWithActivityItems:(NSArray *)activityItems{
+- (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
+    if (![self isClientInstalled]) {
+        return NO;
+    }
+    
+    for (id activityItem in activityItems) {
+        if ([activityItem isKindOfClass:[NSString class]] || [activityItem isKindOfClass:[NSURL class]])  {
+            return YES;
+        }
+    }
+    
     return NO;
 }
 
-// override to extract items and set up your HI. default does nothing
 - (void)prepareWithActivityItems:(NSArray *)activityItems {
-    // TODO implement
+    NSString *content = nil;
+    NSString *link = nil;
+    
+    for (id activityItem in activityItems) {
+        if ([activityItem isKindOfClass:[NSString class]]) {
+            NSString *text = activityItem;
+            if ([text hasPrefix:@"http://"] || [text hasPrefix:@"https://"]) {
+                link = text;
+            }
+            else {
+                content = text;
+            }
+        }
+        else if ([activityItem isKindOfClass:[NSURL class]]) {
+            NSURL *url = activityItem;
+            link = [url absoluteString];
+        }
+    }
+    
+    if (content != nil && link != nil) {
+        self.text = [NSString stringWithFormat:@"%@ %@", content, link];
+    }
+    else if (content != nil && link == nil) {
+        self.text = content;
+    }
+    else if (content == nil && link != nil) {
+        self.text = link;
+    }
+    else {
+        self.text = @"POST!";
+    }
 }
 
-// return non-nil to have vC presented modally. call activityDidFinish at end. default returns nil
 - (UIViewController *)activityViewController {
     return nil;
 }
 
-// if no view controller, this method is called. call activityDidFinish when done. default calls [self activityDidFinish:NO]
 - (void)performActivity {
-    // TODO implement
+
+#ifndef NDEBUG
+    NSLog(@"Sharing: %@", self.encodedText);
+#endif
+    
+    [self activityDidFinish:TRUE];
+    [[UIApplication sharedApplication] openURL:self.clientOpenURL];
 }
-
-// state method
-
-// activity must call this when activity is finished. can be called on any thread
-//- (void)activityDidFinish:(BOOL)completed
 
 @end
