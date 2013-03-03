@@ -23,17 +23,7 @@
 		26687FA116E2986400BEE986 /* SSTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FA016E2986400BEE986 /* SSTAppDelegate.m */; };
 		26687FAA16E2986500BEE986 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26687FA816E2986500BEE986 /* MainStoryboard.storyboard */; };
 		26687FAD16E2986500BEE986 /* SSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FAC16E2986500BEE986 /* SSTViewController.m */; };
-		26687FE616E2A06900BEE986 /* BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FC216E2A06900BEE986 /* BBlock.m */; };
-		26687FE816E2A06900BEE986 /* license in Resources */ = {isa = PBXBuildFile; fileRef = 26687FC516E2A06900BEE986 /* license */; };
-		26687FF116E2A06900BEE986 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 26687FD616E2A06900BEE986 /* readme.md */; };
-		26687FF216E2A06900BEE986 /* SKProductsRequest+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FD816E2A06900BEE986 /* SKProductsRequest+BBlock.m */; };
-		26687FF316E2A06900BEE986 /* UIActionSheet+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FDA16E2A06900BEE986 /* UIActionSheet+BBlock.m */; };
-		26687FF416E2A06900BEE986 /* UIAlertView+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FDC16E2A06900BEE986 /* UIAlertView+BBlock.m */; };
-		26687FF516E2A06900BEE986 /* UIControl+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FDE16E2A06900BEE986 /* UIControl+BBlock.m */; };
-		26687FF616E2A06900BEE986 /* UIGestureRecognizer+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FE016E2A06900BEE986 /* UIGestureRecognizer+BBlock.m */; };
 		26687FF716E2A06900BEE986 /* UIImage+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FE216E2A06900BEE986 /* UIImage+BBlock.m */; };
-		26687FF816E2A06900BEE986 /* UITextField+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FE416E2A06900BEE986 /* UITextField+BBlock.m */; };
-		2668800216E2A39000BEE986 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2668800116E2A39000BEE986 /* StoreKit.framework */; };
 		2668800416E2A3E400BEE986 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2668800316E2A3E400BEE986 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -62,25 +52,8 @@
 		26687FA916E2986500BEE986 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		26687FAB16E2986500BEE986 /* SSTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTViewController.h; sourceTree = "<group>"; };
 		26687FAC16E2986500BEE986 /* SSTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTViewController.m; sourceTree = "<group>"; };
-		26687FC116E2A06900BEE986 /* BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBlock.h; sourceTree = "<group>"; };
-		26687FC216E2A06900BEE986 /* BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBlock.m; sourceTree = "<group>"; };
-		26687FC516E2A06900BEE986 /* license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
-		26687FD616E2A06900BEE986 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
-		26687FD716E2A06900BEE986 /* SKProductsRequest+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProductsRequest+BBlock.h"; sourceTree = "<group>"; };
-		26687FD816E2A06900BEE986 /* SKProductsRequest+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProductsRequest+BBlock.m"; sourceTree = "<group>"; };
-		26687FD916E2A06900BEE986 /* UIActionSheet+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+BBlock.h"; sourceTree = "<group>"; };
-		26687FDA16E2A06900BEE986 /* UIActionSheet+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+BBlock.m"; sourceTree = "<group>"; };
-		26687FDB16E2A06900BEE986 /* UIAlertView+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+BBlock.h"; sourceTree = "<group>"; };
-		26687FDC16E2A06900BEE986 /* UIAlertView+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+BBlock.m"; sourceTree = "<group>"; };
-		26687FDD16E2A06900BEE986 /* UIControl+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+BBlock.h"; sourceTree = "<group>"; };
-		26687FDE16E2A06900BEE986 /* UIControl+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BBlock.m"; sourceTree = "<group>"; };
-		26687FDF16E2A06900BEE986 /* UIGestureRecognizer+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+BBlock.h"; sourceTree = "<group>"; };
-		26687FE016E2A06900BEE986 /* UIGestureRecognizer+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+BBlock.m"; sourceTree = "<group>"; };
 		26687FE116E2A06900BEE986 /* UIImage+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BBlock.h"; sourceTree = "<group>"; };
 		26687FE216E2A06900BEE986 /* UIImage+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BBlock.m"; sourceTree = "<group>"; };
-		26687FE316E2A06900BEE986 /* UITextField+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BBlock.h"; sourceTree = "<group>"; };
-		26687FE416E2A06900BEE986 /* UITextField+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BBlock.m"; sourceTree = "<group>"; };
-		2668800116E2A39000BEE986 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2668800316E2A3E400BEE986 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2668800216E2A39000BEE986 /* StoreKit.framework in Frameworks */,
 				26687F9516E2986400BEE986 /* CoreGraphics.framework in Frameworks */,
 				26687F9116E2986400BEE986 /* UIKit.framework in Frameworks */,
 				26687F9316E2986400BEE986 /* Foundation.framework in Frameworks */,
@@ -122,7 +94,6 @@
 			children = (
 				26687F9416E2986400BEE986 /* CoreGraphics.framework */,
 				26687F9216E2986400BEE986 /* Foundation.framework */,
-				2668800116E2A39000BEE986 /* StoreKit.framework */,
 				26687F9016E2986400BEE986 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -175,24 +146,8 @@
 		26687FBF16E2A06900BEE986 /* BBlock */ = {
 			isa = PBXGroup;
 			children = (
-				26687FC116E2A06900BEE986 /* BBlock.h */,
-				26687FC216E2A06900BEE986 /* BBlock.m */,
-				26687FC516E2A06900BEE986 /* license */,
-				26687FD616E2A06900BEE986 /* readme.md */,
-				26687FD716E2A06900BEE986 /* SKProductsRequest+BBlock.h */,
-				26687FD816E2A06900BEE986 /* SKProductsRequest+BBlock.m */,
-				26687FD916E2A06900BEE986 /* UIActionSheet+BBlock.h */,
-				26687FDA16E2A06900BEE986 /* UIActionSheet+BBlock.m */,
-				26687FDB16E2A06900BEE986 /* UIAlertView+BBlock.h */,
-				26687FDC16E2A06900BEE986 /* UIAlertView+BBlock.m */,
-				26687FDD16E2A06900BEE986 /* UIControl+BBlock.h */,
-				26687FDE16E2A06900BEE986 /* UIControl+BBlock.m */,
-				26687FDF16E2A06900BEE986 /* UIGestureRecognizer+BBlock.h */,
-				26687FE016E2A06900BEE986 /* UIGestureRecognizer+BBlock.m */,
 				26687FE116E2A06900BEE986 /* UIImage+BBlock.h */,
 				26687FE216E2A06900BEE986 /* UIImage+BBlock.m */,
-				26687FE316E2A06900BEE986 /* UITextField+BBlock.h */,
-				26687FE416E2A06900BEE986 /* UITextField+BBlock.m */,
 			);
 			path = BBlock;
 			sourceTree = SOURCE_ROOT;
@@ -251,8 +206,6 @@
 			files = (
 				26687F9B16E2986400BEE986 /* InfoPlist.strings in Resources */,
 				26687FAA16E2986500BEE986 /* MainStoryboard.storyboard in Resources */,
-				26687FE816E2A06900BEE986 /* license in Resources */,
-				26687FF116E2A06900BEE986 /* readme.md in Resources */,
 				2668800416E2A3E400BEE986 /* README.md in Resources */,
 				2640CC2416E2F539005CC965 /* Default-568h@2x.png in Resources */,
 				2640CC2516E2F539005CC965 /* Default.png in Resources */,
@@ -272,14 +225,7 @@
 				26687F9D16E2986400BEE986 /* main.m in Sources */,
 				26687FA116E2986400BEE986 /* SSTAppDelegate.m in Sources */,
 				26687FAD16E2986500BEE986 /* SSTViewController.m in Sources */,
-				26687FE616E2A06900BEE986 /* BBlock.m in Sources */,
-				26687FF216E2A06900BEE986 /* SKProductsRequest+BBlock.m in Sources */,
-				26687FF316E2A06900BEE986 /* UIActionSheet+BBlock.m in Sources */,
-				26687FF416E2A06900BEE986 /* UIAlertView+BBlock.m in Sources */,
-				26687FF516E2A06900BEE986 /* UIControl+BBlock.m in Sources */,
-				26687FF616E2A06900BEE986 /* UIGestureRecognizer+BBlock.m in Sources */,
 				26687FF716E2A06900BEE986 /* UIImage+BBlock.m in Sources */,
-				26687FF816E2A06900BEE986 /* UITextField+BBlock.m in Sources */,
 				2640CC1C16E2EBC3005CC965 /* ADNActivity.m in Sources */,
 				2640CC1D16E2EBC3005CC965 /* ADNFelixActivity.m in Sources */,
 				2640CC1E16E2EBC3005CC965 /* ADNNetbotActivity.m in Sources */,

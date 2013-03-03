@@ -14,12 +14,11 @@ it is. (See Screenshot below)
 
 The sources files you would need are in the ADNActivities folder. There is the base class and
 the Felix and Netbot activities. The images used for the icons are drawn in code thanks to
-[PaintCode](http://www.paintcodeapp.com/) so there are not resources you need to add or manage
-in your project. You will need [BBlock](https://github.com/kgn/BBlock) to your project. Just
-load the iOS sources files since it also includes Mac source files as well. What is used is
-the UIImage+BBlock category for drawing images using code provided by PaintCode. You could
-simply add just the header and implementation file for that category. The entire project from
-GitHub is used here as a submodule to help with staying current.
+[PaintCode](http://www.paintcodeapp.com/) so there are no resources you need to add or manage
+in your project. You will need [BBlock](https://github.com/kgn/BBlock) to your project. 
+Only the UIImage+BBlock category is used for drawing images using code provided by PaintCode. 
+The entire project from GitHub is used in this project as a submodule to help with staying current. 
+Finally you may need to add frameworks to your project such as Core Graphics.
 
 Once you have the sources files added you can use the example in SSTViewController to set up
 the activities which are shown by the Activity Sheet. It creates an array of activity items which
@@ -63,10 +62,9 @@ they appear to be ready to be included with the collection.
 
 Issue tracking on GitHub can be used for any issues which come up. Otherwise I can be found on ADN. 
 
-Brennan Stehling  
+Brennan Stehling on App.net
 [@smallsharptools](http://alpha.app.net/smallsharptools)
 
 ## Screenshot
 
 <img src="https://raw.github.com/brennanMKE/ADNActivityCollection/master/ADNActivity.png" width="320px" alt="Screenshot" />
-
