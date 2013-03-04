@@ -3,7 +3,7 @@ ADN Activity Collection
 
 ## UIActivities to share with App.net (ADN) apps from an Activity Sheet
 
-The Activity Sheet is new iOS 6. It provides for an abstractions to share content from apps to 
+The Activity Sheet is new iOS 6. It provides for abstractions to share content from apps to 
 multiple services in a very decoupled way. Custom activities can be added as options.
 Sharing messages to App.net (ADN) with apps like Netbot and Felix can help get more content
 onto ADN and give users sharing options they want. This sample project will provide a collection
