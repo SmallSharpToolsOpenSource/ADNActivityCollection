@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="XpD-WD-u2Y">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xlq-8T-vYR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="XpD-WD-u2Y" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SD7-1X-Nab">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AhM-VD-hQB" kind="relationship" relationship="rootViewController" id="iqg-rz-y4R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GyF-l0-MvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447" y="28"/>
+        </scene>
+        <!--View Controller - ADN Activity-->
+        <scene sceneID="wRx-Cs-cOb">
+            <objects>
+                <viewController id="AhM-VD-hQB" customClass="SSTViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eyw-7J-pCk">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYO-Jz-VPP" userLabel="Content Text View">
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" type="user" id="f7P-0L-CL2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://join.app.net/" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XxS-il-ONf" userLabel="URL Text Field">
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AhM-VD-hQB" id="6cE-TZ-PJk"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lYO-Jz-VPP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6hk-93-Alz"/>
+                            <constraint firstItem="lYO-Jz-VPP" firstAttribute="top" secondItem="Eyw-7J-pCk" secondAttribute="top" constant="20" symbolic="YES" type="default" id="bLw-ku-6MH"/>
+                            <constraint firstItem="XxS-il-ONf" firstAttribute="top" secondItem="lYO-Jz-VPP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="g65-jz-FCp"/>
+                            <constraint firstItem="XxS-il-ONf" firstAttribute="leading" secondItem="Eyw-7J-pCk" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="k5N-bh-UaU"/>
+                            <constraint firstItem="lYO-Jz-VPP" firstAttribute="leading" secondItem="Eyw-7J-pCk" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="l6O-Jw-Me6"/>
+                            <constraint firstAttribute="trailing" secondItem="XxS-il-ONf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lKn-OS-fXc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ADN Activity" id="wTJ-8k-wmc">
+                        <barButtonItem key="rightBarButtonItem" title="Share" style="done" id="jKZ-Ku-OEe">
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="AhM-VD-hQB" id="Gd1-fw-nwO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="lYO-Jz-VPP" id="fwE-n9-Zim"/>
+                        <outlet property="urlTextField" destination="XxS-il-ONf" id="6lk-zo-6Tu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jX-Me-zqG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="28"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SSTViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSTViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="shareButtonTapped:"/>
+                <relationship kind="outlet" name="contentTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="urlTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

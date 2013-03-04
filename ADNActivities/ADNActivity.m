@@ -25,12 +25,17 @@
 }
 
 - (BOOL)isClientInstalled {
+#if TARGET_IPHONE_SIMULATOR
+    // provide an option for testing in the simulator where third party apps will not be installed
+    return TRUE;
+#else
     if (self.clientURLScheme != nil) {
         NSURL *url = [NSURL URLWithString:self.clientURLScheme];
         return [[UIApplication sharedApplication] canOpenURL:url];
     }
     
     return FALSE;
+#endif
 }
 
 - (NSURL *)clientOpenURL {
@@ -199,9 +204,20 @@
 #ifndef NDEBUG
     NSLog(@"Sharing: %@", self.encodedText);
 #endif
+
+#if TARGET_IPHONE_SIMULATOR
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"iPhone Simulator"
+                                                    message: @"Sharing does not function in the iPhone Simulator."
+                                                   delegate: nil
+                                          cancelButtonTitle: NSLocalizedString( @"OK", @"" )
+                                          otherButtonTitles: nil];
     
+    [alert show];
+    [self activityDidFinish:TRUE];
+#else
     [self activityDidFinish:TRUE];
     [[UIApplication sharedApplication] openURL:self.clientOpenURL];
+#endif
 }
 
 @end
