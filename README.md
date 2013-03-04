@@ -47,9 +47,10 @@ ADN clients should return to the calling app either when the post is completed o
 
 For other sharing options there is typically a view controller which allows the user to edit and
 share the content from within the app. Since these activities are meant to use a third party app
-to authenticate with ADN and complete the post. It makes sense to warn they user they are about to
-leave the app though, so a view controller which can preview the message and allow the user to 
-cancel if the choose instead if jumping to another app.
+to authenticate with ADN and complete the post there is no view controller. It makes sense to
+warn they user they are about to leave the app though, so a view controller which can preview
+the message and allow the user to cancel if the choose instead if jumping to another app could
+be added later.
 
 ## Contributions
 
@@ -62,7 +63,7 @@ they appear to be ready to be included with the collection.
 
 Issue tracking on GitHub can be used for any issues which come up. Otherwise I can be found on ADN. 
 
-Brennan Stehling on App.net
+Brennan Stehling on App.net  
 [@smallsharptools](http://alpha.app.net/smallsharptools)
 
 ## Screenshot
