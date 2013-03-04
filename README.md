@@ -1,7 +1,7 @@
-ADNActivityCollection
+ADN Activity Collection
 =====================
 
-## UIActivities to share with ADN apps from an Activity Sheet
+## UIActivities to share with App.net (ADN) apps from an Activity Sheet
 
 The Activity Sheet is new iOS 6. It provides for an abstractions to share content from apps to 
 multiple services in a very decoupled way. Custom activities can be added as options.
@@ -10,7 +10,7 @@ onto ADN and give users sharing options they want. This sample project will prov
 of activities which will detect if an ADN app is available and make it available as an option if
 it is. (See Screenshot below)
 
-## How to use ADNActivityCollection
+## How to use ADN Activity Collection
 
 The sources files you would need are in the ADNActivities folder. There is the base class and
 the Felix and Netbot activities. The images used for the icons are drawn in code thanks to
