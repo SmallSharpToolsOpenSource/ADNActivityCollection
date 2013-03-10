@@ -10,6 +10,7 @@
 
 #import "ADNFelixActivity.h"
 #import "ADNNetbotActivity.h"
+#import "ADNExampleActivity.h"
 
 @interface SSTViewController () <UITextFieldDelegate>
 
@@ -36,6 +37,11 @@
 
 #pragma mark - User Actions
 #pragma mark -
+
+- (IBAction)resetButtonTapped:(id)sender {
+    self.contentTextView.text = @"";
+    self.urlTextField.text = @"";
+}
 
 - (IBAction)shareButtonTapped:(id)sender {
     [self shareContent];
@@ -82,8 +88,9 @@
     
     ADNFelixActivity  *felixActivity = [[ADNFelixActivity alloc] init];
     ADNNetbotActivity *netbotActivity = [[ADNNetbotActivity alloc] init];
+    ADNExampleActivity *exampleActivity = [[ADNExampleActivity alloc] init];
     
-    NSArray *activities = @[felixActivity, netbotActivity];
+    NSArray *activities = @[exampleActivity, felixActivity, netbotActivity];
     
     UIActivityViewController *activityView = [[UIActivityViewController alloc] initWithActivityItems:activityItems
                                                                                applicationActivities:activities];

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Qsz-I7-mNd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Post View Controller - Post View-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="SSTPostViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAq-RT-yLW">
+                                <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="hb5-Rk-cKm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5G-d7-FBJ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postButtonTapped:" destination="2" eventType="touchUpInside" id="xJP-wE-SQG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acP-rA-OPV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="H1H-rz-OeR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="acP-rA-OPV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="FTc-Ib-caE"/>
+                            <constraint firstAttribute="trailing" secondItem="acP-rA-OPV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LXN-Ou-MAs"/>
+                            <constraint firstAttribute="trailing" secondItem="M5G-d7-FBJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="a4F-BP-ejp"/>
+                            <constraint firstItem="M5G-d7-FBJ" firstAttribute="top" secondItem="AAq-RT-yLW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cWo-eK-xgf"/>
+                            <constraint firstItem="AAq-RT-yLW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="l5b-3u-905"/>
+                            <constraint firstItem="M5G-d7-FBJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lnz-2A-zn5"/>
+                            <constraint firstItem="acP-rA-OPV" firstAttribute="top" secondItem="M5G-d7-FBJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="njV-Jx-MEO"/>
+                            <constraint firstItem="AAq-RT-yLW" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xgc-sy-iU1"/>
+                            <constraint firstAttribute="trailing" secondItem="AAq-RT-yLW" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xoq-Mp-tGI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Post View" id="M4s-I9-eUz">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="ReR-fS-Ws6">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="2" id="gS4-bT-fhJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="statusLabel" destination="acP-rA-OPV" id="5AD-pf-Og8"/>
+                        <outlet property="textView" destination="AAq-RT-yLW" id="dlR-eM-ah5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="-336"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ht1-ga-GG3">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Qsz-I7-mNd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="vQi-i8-ZeN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dhE-oS-cH5" kind="relationship" relationship="rootViewController" id="vAN-cy-7pl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZW-Ij-cFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="-347"/>
+        </scene>
+        <!--Home View Controller - Example Client-->
+        <scene sceneID="897-VJ-5GW">
+            <objects>
+                <viewController id="dhE-oS-cH5" customClass="SSTHomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTF-x3-djU">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-V4-vWT">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go to Post View">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="push" id="8ej-AX-MJD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FZd-V4-vWT" firstAttribute="top" secondItem="hTF-x3-djU" secondAttribute="top" constant="20" symbolic="YES" type="default" id="7Rl-g5-Fjl"/>
+                            <constraint firstItem="FZd-V4-vWT" firstAttribute="leading" secondItem="hTF-x3-djU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="JTh-gN-rKj"/>
+                            <constraint firstAttribute="trailing" secondItem="FZd-V4-vWT" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Z7n-ot-SKB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Example Client" id="BMT-n2-WuN">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="0v8-4p-VsC"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="showPostView" id="Ahr-aK-c72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzx-cE-Jv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="-336"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SSTHomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSTHomeViewController.h"/>
+        </class>
+        <class className="SSTPostViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSTPostViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonTapped:"/>
+                <relationship kind="action" name="postButtonTapped:"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="8ej-AX-MJD"/>
+    </inferredMetricsTieBreakers>
+</document>

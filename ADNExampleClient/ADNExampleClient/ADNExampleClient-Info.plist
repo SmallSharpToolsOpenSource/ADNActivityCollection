@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>ADN Activities</string>
+	<string>ADN Client</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
@@ -16,8 +16,6 @@
 			<array>
 				<string>Icon.png</string>
 				<string>Icon@2x.png</string>
-				<string>Icon~iPad.png</string>
-				<string>Icon~iPad@2x.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -40,7 +38,7 @@
 			<string>com.smallsharptools.${PRODUCT_NAME:rfc1034identifier}</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>adnactivitycollection</string>
+				<string>adnexampleclient</string>
 			</array>
 		</dict>
 	</array>
@@ -57,6 +55,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

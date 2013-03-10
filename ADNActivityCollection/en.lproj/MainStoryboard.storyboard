@@ -56,6 +56,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ADN Activity" id="iVH-HU-fxt">
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="Bee-bo-2lp">
+                            <connections>
+                                <action selector="resetButtonTapped:" destination="2" id="jbR-UD-G0L"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Share" style="done" id="J8M-iH-0dE">
                             <connections>
                                 <action selector="shareButtonTapped:" destination="2" id="2Iz-dg-jdC"/>
@@ -79,6 +84,7 @@
         <class className="SSTViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SSTViewController.h"/>
             <relationships>
+                <relationship kind="action" name="resetButtonTapped:"/>
                 <relationship kind="action" name="shareButtonTapped:"/>
                 <relationship kind="outlet" name="contentTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="urlTextField" candidateClass="UITextField"/>

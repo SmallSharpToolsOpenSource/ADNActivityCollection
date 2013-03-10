@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'ADNActivityCollection' target in the 'ADNActivityCollection' project
+// Prefix header for all source files of the 'ADNExampleClient' target in the 'ADNExampleClient' project
 //
 
 #import <Availability.h>

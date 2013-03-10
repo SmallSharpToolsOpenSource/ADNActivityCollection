@@ -57,6 +57,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ADN Activity" id="wTJ-8k-wmc">
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="L5G-hn-V6p">
+                            <connections>
+                                <action selector="resetButtonTapped:" destination="AhM-VD-hQB" id="h3S-MK-lf6"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Share" style="done" id="jKZ-Ku-OEe">
                             <connections>
                                 <action selector="shareButtonTapped:" destination="AhM-VD-hQB" id="Gd1-fw-nwO"/>
@@ -74,19 +79,6 @@
             <point key="canvasLocation" x="483" y="28"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SSTViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSTViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="shareButtonTapped:"/>
-                <relationship kind="outlet" name="contentTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="urlTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
