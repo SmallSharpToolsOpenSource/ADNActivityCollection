@@ -43,6 +43,11 @@ to the originating app. It is likely developers will be more likely to integrate
 these activities if they know they are not sending users away from their app with this option.
 ADN clients should return to the calling app either when the post is completed or if it is canceled.
 
+To support the Return URL Scheme simply use the parameter returnURLScheme and once the operation to
+post has completed or canceled use that value to open the calling application to return to it. The
+returning application should handle that interaction if any customization is wanted, but there may
+not be any necessary actions.
+
 ## No View Controller
 
 For other sharing options there is typically a view controller which allows the user to edit and
