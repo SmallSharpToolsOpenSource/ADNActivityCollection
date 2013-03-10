@@ -27,7 +27,6 @@
 		26687FAA16E2986500BEE986 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26687FA816E2986500BEE986 /* MainStoryboard.storyboard */; };
 		26687FAD16E2986500BEE986 /* SSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FAC16E2986500BEE986 /* SSTViewController.m */; };
 		26687FF716E2A06900BEE986 /* UIImage+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FE216E2A06900BEE986 /* UIImage+BBlock.m */; };
-		2668800416E2A3E400BEE986 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2668800316E2A3E400BEE986 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +59,6 @@
 		26687FAC16E2986500BEE986 /* SSTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTViewController.m; sourceTree = "<group>"; };
 		26687FE116E2A06900BEE986 /* UIImage+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BBlock.h"; sourceTree = "<group>"; };
 		26687FE216E2A06900BEE986 /* UIImage+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BBlock.m"; sourceTree = "<group>"; };
-		2668800316E2A3E400BEE986 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 		26687F8416E2986400BEE986 = {
 			isa = PBXGroup;
 			children = (
-				2668800316E2A3E400BEE986 /* README.md */,
 				26687F9616E2986400BEE986 /* ADNActivityCollection */,
 				26687F8F16E2986400BEE986 /* Frameworks */,
 				26687F8E16E2986400BEE986 /* Products */,
@@ -215,7 +212,6 @@
 			files = (
 				26687F9B16E2986400BEE986 /* InfoPlist.strings in Resources */,
 				26687FAA16E2986500BEE986 /* MainStoryboard.storyboard in Resources */,
-				2668800416E2A3E400BEE986 /* README.md in Resources */,
 				2640CC2416E2F539005CC965 /* Default-568h@2x.png in Resources */,
 				2640CC2516E2F539005CC965 /* Default.png in Resources */,
 				2640CC2616E2F539005CC965 /* Default@2x.png in Resources */,
