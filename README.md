@@ -73,6 +73,11 @@ they appear to be ready to be included with the collection.
 
 Issue tracking on GitHub can be used for any issues which come up. Otherwise I can be found on ADN. 
 
+## Your App Here
+
+Are you using the ADN Activity Collection in your app? I'd like to add a list of apps which are using
+it here so others can see real-world examples. Simply reach out to my on ADN with my details below.
+
 Brennan Stehling on App.net  
 [@smallsharptools](http://alpha.app.net/smallsharptools)
 
