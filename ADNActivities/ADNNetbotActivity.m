@@ -107,7 +107,9 @@
 
 - (NSURL *)clientOpenURL {
     if (self.clientURLScheme != nil) {
-        NSString *urlString = [NSString stringWithFormat:@"%@post?text=%@", self.clientURLScheme, self.encodedText];
+        // Note: Adding another slash fixes the sharing option with Netbot
+        // https://alpha.app.net/edmundtay/post/3828992
+        NSString *urlString = [NSString stringWithFormat:@"%@/post?text=%@", self.clientURLScheme, self.encodedText];
         NSString *appURLScheme = [self appURLScheme];
         if (appURLScheme != nil) {
             urlString = [NSString stringWithFormat:@"%@&returnURLScheme=%@", urlString, [self encodeText:appURLScheme]];
