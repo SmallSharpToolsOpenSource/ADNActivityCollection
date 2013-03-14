@@ -8,7 +8,7 @@ multiple services in a very decoupled way. Custom activities can be added as opt
 Sharing messages to App.net (ADN) with apps like Netbot and Felix can help get more content
 onto ADN and give users sharing options they want. This sample project will provide a collection
 of activities which will detect if an ADN app is available and make it available as an option if
-it is. (See Screenshot below)
+it is. (screenshot below)
 
 ## How to use ADN Activity Collection
 
@@ -27,13 +27,18 @@ NSString value for the ADN activities but Twitter and Facebook using them as lin
 Netbot or another ADN client has the option to take an NSURL value it could be passed as well
 to share on ADN.
 
+See the PaintCode documents included with this project as examples of what is needed to provide
+a new icon for an activity.
+
 ## What about my favorite ADN app?
 
 More apps can be supported. All that is needed is a URL Scheme with a way to send a new post
-over to the app. Both Felix and Netbot had support already as you can see from the following pages.
+over to the app. Felix, Netbot and Riposte are currently supported. Below are links to their
+docs covering their URL Scheme support.
 
  * [Felix](http://tigerbears.com/felix/urls.html)
  * [Netbot](http://tapbots.com/blog/development/tweetbot-url-scheme) (Same as Tweetbot)
+ * [Riposte](http://riposteapp.net/release-notes.html)
 
 ## Return URL Scheme
 

@@ -27,6 +27,7 @@
 		26687FAA16E2986500BEE986 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26687FA816E2986500BEE986 /* MainStoryboard.storyboard */; };
 		26687FAD16E2986500BEE986 /* SSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FAC16E2986500BEE986 /* SSTViewController.m */; };
 		26687FF716E2A06900BEE986 /* UIImage+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FE216E2A06900BEE986 /* UIImage+BBlock.m */; };
+		26A41D1E16F2810200AC9D04 /* ADNRiposteActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A41D1D16F2810200AC9D04 /* ADNRiposteActivity.m */; };
 		26A87F7516ED32D2001FFA89 /* ADNExampleActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A87F7416ED32D2001FFA89 /* ADNExampleActivity.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		26687FAC16E2986500BEE986 /* SSTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTViewController.m; sourceTree = "<group>"; };
 		26687FE116E2A06900BEE986 /* UIImage+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BBlock.h"; sourceTree = "<group>"; };
 		26687FE216E2A06900BEE986 /* UIImage+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BBlock.m"; sourceTree = "<group>"; };
+		26A41D1C16F2810200AC9D04 /* ADNRiposteActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNRiposteActivity.h; path = ADNActivities/ADNRiposteActivity.h; sourceTree = SOURCE_ROOT; };
+		26A41D1D16F2810200AC9D04 /* ADNRiposteActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNRiposteActivity.m; path = ADNActivities/ADNRiposteActivity.m; sourceTree = SOURCE_ROOT; };
 		26A87F7316ED32D2001FFA89 /* ADNExampleActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNExampleActivity.h; sourceTree = "<group>"; };
 		26A87F7416ED32D2001FFA89 /* ADNExampleActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNExampleActivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +153,8 @@
 				2640CC1916E2EBC3005CC965 /* ADNFelixActivity.m */,
 				2640CC1A16E2EBC3005CC965 /* ADNNetbotActivity.h */,
 				2640CC1B16E2EBC3005CC965 /* ADNNetbotActivity.m */,
+				26A41D1C16F2810200AC9D04 /* ADNRiposteActivity.h */,
+				26A41D1D16F2810200AC9D04 /* ADNRiposteActivity.m */,
 			);
 			name = ADNActivities;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				2640CC1D16E2EBC3005CC965 /* ADNFelixActivity.m in Sources */,
 				2640CC1E16E2EBC3005CC965 /* ADNNetbotActivity.m in Sources */,
 				26A87F7516ED32D2001FFA89 /* ADNExampleActivity.m in Sources */,
+				26A41D1E16F2810200AC9D04 /* ADNRiposteActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

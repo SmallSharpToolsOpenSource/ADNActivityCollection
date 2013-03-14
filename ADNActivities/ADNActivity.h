@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 SmallSharptools LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface ADNActivity : UIActivity
 
 @property (strong, nonatomic) NSString *text;

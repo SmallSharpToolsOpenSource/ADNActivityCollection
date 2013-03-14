@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 SmallSharptools LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 #import "ADNActivity.h"
 
 @interface ADNFelixActivity : ADNActivity
