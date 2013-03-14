@@ -10,10 +10,6 @@ onto ADN and give users sharing options they want. This sample project will prov
 of activities which will detect if an ADN app is available and make it available as an option if
 it is. (See Screenshot below)
 
-Note: At the moment the Netbot sharing option is failing because the post value sent over to
-Netbot using the URL Scheme no longer opens the New Post view in Netbot. Hopefully it will start
-behaving as it did previously when the activity was first created.
-
 ## How to use ADN Activity Collection
 
 The sources files you would need are in the ADNActivities folder. There is the base class and
