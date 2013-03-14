@@ -10,6 +10,10 @@ onto ADN and give users sharing options they want. This sample project will prov
 of activities which will detect if an ADN app is available and make it available as an option if
 it is. (See Screenshot below)
 
+Note: At the moment the Netbot sharing option is failing because the post value sent over to
+Netbot using the URL Scheme no longer opens the New Post view in Netbot. Hopefully it will start
+behaving as it did previously when the activity was first created.
+
 ## How to use ADN Activity Collection
 
 The sources files you would need are in the ADNActivities folder. There is the base class and
@@ -77,6 +81,11 @@ Issue tracking on GitHub can be used for any issues which come up. Otherwise I c
 
 Are you using the ADN Activity Collection in your app? I'd like to add a list of apps which are using
 it here so others can see real-world examples. Simply reach out to my on ADN with my details below.
+
+## Elsewhere with ADN
+
+This solution and others are listed with [ADN Developer Resources](https://github.com/appdotnet/api-spec/wiki/Developer-Resources#wiki-objectivec)
+where you can find other bits you can use with your development work.
 
 Brennan Stehling on App.net  
 [@smallsharptools](http://alpha.app.net/smallsharptools)
