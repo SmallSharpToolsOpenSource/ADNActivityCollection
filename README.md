@@ -64,7 +64,7 @@ For other sharing options there is typically a view controller which allows the 
 share the content from within the app. Since these activities are meant to use a third party app
 to authenticate with ADN and complete the post there is no view controller. It makes sense to
 warn they user they are about to leave the app though, so a view controller which can preview
-the message and allow the user to cancel if the choose instead if jumping to another app could
+the message and allow the user to cancel if they choose instead if jumping to another app could
 be added later.
 
 ## Contributions
