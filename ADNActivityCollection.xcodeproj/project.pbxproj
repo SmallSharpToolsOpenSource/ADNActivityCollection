@@ -27,7 +27,7 @@
 		26687FAA16E2986500BEE986 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26687FA816E2986500BEE986 /* MainStoryboard.storyboard */; };
 		26687FAD16E2986500BEE986 /* SSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FAC16E2986500BEE986 /* SSTViewController.m */; };
 		26687FF716E2A06900BEE986 /* UIImage+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 26687FE216E2A06900BEE986 /* UIImage+BBlock.m */; };
-		2680864D16FA43780058FD24 /* ADNActivityCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680864C16FA43780058FD24 /* ADNActivityCollection.m */; };
+		2680865016FA45460058FD24 /* ADNActivityCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680864F16FA45460058FD24 /* ADNActivityCollection.m */; };
 		26A41D1E16F2810200AC9D04 /* ADNRiposteActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A41D1D16F2810200AC9D04 /* ADNRiposteActivity.m */; };
 		26A87F7516ED32D2001FFA89 /* ADNExampleActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A87F7416ED32D2001FFA89 /* ADNExampleActivity.m */; };
 /* End PBXBuildFile section */
@@ -62,8 +62,8 @@
 		26687FAC16E2986500BEE986 /* SSTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTViewController.m; sourceTree = "<group>"; };
 		26687FE116E2A06900BEE986 /* UIImage+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BBlock.h"; sourceTree = "<group>"; };
 		26687FE216E2A06900BEE986 /* UIImage+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BBlock.m"; sourceTree = "<group>"; };
-		2680864B16FA43780058FD24 /* ADNActivityCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNActivityCollection.h; sourceTree = "<group>"; };
-		2680864C16FA43780058FD24 /* ADNActivityCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNActivityCollection.m; sourceTree = "<group>"; };
+		2680864E16FA45460058FD24 /* ADNActivityCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNActivityCollection.h; path = ADNActivities/ADNActivityCollection.h; sourceTree = SOURCE_ROOT; };
+		2680864F16FA45460058FD24 /* ADNActivityCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNActivityCollection.m; path = ADNActivities/ADNActivityCollection.m; sourceTree = SOURCE_ROOT; };
 		26A41D1C16F2810200AC9D04 /* ADNRiposteActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNRiposteActivity.h; path = ADNActivities/ADNRiposteActivity.h; sourceTree = SOURCE_ROOT; };
 		26A41D1D16F2810200AC9D04 /* ADNRiposteActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNRiposteActivity.m; path = ADNActivities/ADNRiposteActivity.m; sourceTree = SOURCE_ROOT; };
 		26A87F7316ED32D2001FFA89 /* ADNExampleActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNExampleActivity.h; sourceTree = "<group>"; };
@@ -150,8 +150,8 @@
 		26687FB316E298A200BEE986 /* ADNActivities */ = {
 			isa = PBXGroup;
 			children = (
-				2680864B16FA43780058FD24 /* ADNActivityCollection.h */,
-				2680864C16FA43780058FD24 /* ADNActivityCollection.m */,
+				2680864E16FA45460058FD24 /* ADNActivityCollection.h */,
+				2680864F16FA45460058FD24 /* ADNActivityCollection.m */,
 				2640CC1616E2EBC3005CC965 /* ADNActivity.h */,
 				2640CC1716E2EBC3005CC965 /* ADNActivity.m */,
 				2640CC1816E2EBC3005CC965 /* ADNFelixActivity.h */,
@@ -254,7 +254,7 @@
 				2640CC1E16E2EBC3005CC965 /* ADNNetbotActivity.m in Sources */,
 				26A87F7516ED32D2001FFA89 /* ADNExampleActivity.m in Sources */,
 				26A41D1E16F2810200AC9D04 /* ADNRiposteActivity.m in Sources */,
-				2680864D16FA43780058FD24 /* ADNActivityCollection.m in Sources */,
+				2680865016FA45460058FD24 /* ADNActivityCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
