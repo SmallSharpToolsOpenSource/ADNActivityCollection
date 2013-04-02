@@ -8,9 +8,7 @@
 
 #import "SSTViewController.h"
 
-#import "ADNFelixActivity.h"
-#import "ADNNetbotActivity.h"
-#import "ADNRiposteActivity.h"
+#import "ADNActivityCollection.h"
 #import "ADNExampleActivity.h"
 
 @interface SSTViewController () <UITextFieldDelegate>
@@ -87,12 +85,12 @@
         activityItems = @[];
     }
     
-    ADNFelixActivity  *felixActivity = [[ADNFelixActivity alloc] init];
-    ADNNetbotActivity *netbotActivity = [[ADNNetbotActivity alloc] init];
-    ADNRiposteActivity *riposteActivity = [[ADNRiposteActivity alloc] init];
+    NSArray *allActivities = [ADNActivityCollection allActivities];
     ADNExampleActivity *exampleActivity = [[ADNExampleActivity alloc] init];
     
-    NSArray *activities = @[riposteActivity, felixActivity, netbotActivity, exampleActivity];
+    NSMutableArray *activities = [NSMutableArray array];
+    [activities addObjectsFromArray:allActivities];
+    [activities addObject:exampleActivity];
     
     UIActivityViewController *activityView = [[UIActivityViewController alloc] initWithActivityItems:activityItems
                                                                                applicationActivities:activities];
