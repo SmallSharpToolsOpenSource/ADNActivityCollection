@@ -46,7 +46,7 @@ One additional parameter which is sent to the other apps is a value which can be
 to the calling app once the post operation has completed. This way the sequence of sharing returns
 to the originating app. It is likely developers will be more likely to integrate ADN clients with
 these activities if they know they are not sending users away from their app with this option.
-ADN clients should return to the calling app either when the post is completed or if it is canceled.
+ADN clients should return to the calling app once the post is completed or canceled.
 
 To support the Return URL Scheme simply use the parameter returnURLScheme and once the operation to
 post has completed or is canceled use that value to open the calling application to return to it. The
