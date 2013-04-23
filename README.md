@@ -53,7 +53,7 @@ post has completed or is canceled use that value to open the calling application
 returning application should handle that interaction if any customization is wanted, but there may
 not be any necessary actions.
 
-Included within this project (open the Workspace) there example ADN Client which works with the 
+Included within this project (open the Workspace) there is an example ADN Client which works with the 
 ADN Activities application. It can even be used with the Simulator to show how the interaction
 works between a calling application and a client. The Return URL Scheme is used to complete
 the activity as intended.
