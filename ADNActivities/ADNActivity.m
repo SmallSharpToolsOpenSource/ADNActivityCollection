@@ -8,8 +8,6 @@
 
 #import "ADNActivity.h"
 
-#import "UIImage+BBlock.h"
-
 @implementation ADNActivity
 
 #pragma mark - Public Implementation
@@ -101,8 +99,12 @@
 }
 
 - (UIImage *)activityImage {
-    // create an image (drawn using PaintCode) for a generic sharing image
-    UIImage *image = [UIImage imageWithIdentifier:@"GenericShareActivityImage" forSize:CGSizeMake(43, 43) andDrawingBlock:^{
+    static UIImage *image = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(43, 43), NO, 0.0f);
+        
+        
         //// Color Declarations
         UIColor* fillColor = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
         
@@ -141,8 +143,12 @@
         
         [fillColor setFill];
         [bezierPath fill];
-    }];
-    
+        
+        
+        image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+    });
     return image;
 }
 

@@ -11,6 +11,7 @@
 #import "ADNFelixActivity.h"
 #import "ADNNetbotActivity.h"
 #import "ADNRiposteActivity.h"
+#import "ADNHappyActivity.h"
 
 @implementation ADNActivityCollection
 
@@ -18,7 +19,8 @@
     return @[
                 [[ADNFelixActivity alloc] init],
                 [[ADNNetbotActivity alloc] init],
-                [[ADNRiposteActivity alloc] init]
+                [[ADNRiposteActivity alloc] init],
+                [[ADNHappyActivity alloc] init]
             ];
 }
 

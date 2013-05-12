@@ -8,8 +8,6 @@
 
 #import "ADNNetbotActivity.h"
 
-#import "UIImage+BBlock.h"
-
 // User docs for Tweetbot URL Scheme
 // http://tapbots.com/blog/development/tweetbot-url-scheme
 // netbot:///post?text=abc
@@ -31,8 +29,12 @@
 }
 
 - (UIImage *)activityImage {
-    // return image for Netbot
-    UIImage *image = [UIImage imageWithIdentifier:@"NetbotShareActivityImage" forSize:CGSizeMake(43, 43) andDrawingBlock:^{
+    static UIImage *image = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(43, 43), NO, 0.0f);
+        
+        
         //// Color Declarations
         UIColor* fillColor = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
         
@@ -100,10 +102,15 @@
         UIBezierPath* mouthPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(19.5, 33.5, 4, 4)];
         [fillColor setFill];
         [mouthPath fill];
-    }];
-    
+        
+        
+        image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+    });
     return image;
 }
+
 
 - (NSURL *)clientOpenURL {
     if (self.clientURLScheme != nil) {

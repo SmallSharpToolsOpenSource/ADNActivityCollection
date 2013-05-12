@@ -89,15 +89,18 @@
     ADNExampleActivity *exampleActivity = [[ADNExampleActivity alloc] init];
     
     NSMutableArray *activities = [NSMutableArray array];
-    [activities addObjectsFromArray:allActivities];
     [activities addObject:exampleActivity];
+    [activities addObjectsFromArray:allActivities];
     
     UIActivityViewController *activityView = [[UIActivityViewController alloc] initWithActivityItems:activityItems
                                                                                applicationActivities:activities];
     
     // Exclude default activity types for demo.
     activityView.excludedActivityTypes = @[
+            UIActivityTypePostToFacebook,
             UIActivityTypePostToWeibo,
+            UIActivityTypeMail,
+            UIActivityTypeMessage,
             UIActivityTypePrint,
             UIActivityTypeSaveToCameraRoll
         ];

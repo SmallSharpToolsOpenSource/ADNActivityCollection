@@ -8,9 +8,7 @@
 
 #import "ADNRiposteActivity.h"
 
-#import "UIImage+BBlock.h"
-
-// Ripostedd docs for URL Scheme
+// Riposte docs for URL Scheme
 // http://riposteapp.net/release-notes.html
 // riposte://x-callback-url/createNewPost?text=blahblahblah&accountID=5952
 
@@ -31,8 +29,12 @@
 }
 
 - (UIImage *)activityImage {
-    // return image for Netbot
-    UIImage *image = [UIImage imageWithIdentifier:@"RiposteShareActivityImage" forSize:CGSizeMake(43, 43) andDrawingBlock:^{
+    static UIImage *image = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(43, 43), NO, 0.0f);
+        
+        
         //// Logo Drawing
         UIBezierPath* logoPath = [UIBezierPath bezierPath];
         [logoPath moveToPoint: CGPointMake(23, 14)];
@@ -76,9 +78,12 @@
         [logoPath closePath];
         [[UIColor whiteColor] setFill];
         [logoPath fill];
-
-    }];
-    
+        
+        
+        image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+    });
     return image;
 }
 
