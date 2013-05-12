@@ -97,7 +97,6 @@
     
     // Exclude default activity types for demo.
     activityView.excludedActivityTypes = @[
-            UIActivityTypePostToFacebook,
             UIActivityTypePostToWeibo,
             UIActivityTypeMail,
             UIActivityTypeMessage,
