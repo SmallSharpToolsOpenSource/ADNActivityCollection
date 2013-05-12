@@ -18,9 +18,9 @@
     for (NSString *keyPair in keyPairs) {
         NSArray *values = [keyPair componentsSeparatedByString:@"="];
         if (values.count == 2) {
-            NSString *key = [SSTURLHelper urlDecodeString:[values objectAtIndex:0]];
-            NSString *val = [SSTURLHelper urlDecodeString:[values objectAtIndex:1]];
-            [dictionary setObject:val forKey:key];
+            NSString *key = [self urlDecodeString:values[0]];
+            NSString *val = [self urlDecodeString:values[1]];
+            dictionary[key] = val;
         }
     }
     
