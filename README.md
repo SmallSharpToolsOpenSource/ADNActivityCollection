@@ -12,15 +12,12 @@ it is. (screenshot below)
 
 ## How to use ADN Activity Collection
 
-The sources files you would need are in the ADNActivities folder. There is the base class and
-the Felix and Netbot activities. The images used for the icons are drawn in code thanks to
+The source files you would need are in the ADNActivities folder. There is the base class and
+the Felix, Netbot and other activities. The images used for the icons are drawn in code thanks to
 [PaintCode](http://www.paintcodeapp.com/) so there are no resources you need to add or manage
-in your project. You will need [BBlock](https://github.com/kgn/BBlock) to your project. 
-Only the UIImage+BBlock category is used for drawing images using code provided by PaintCode. 
-The entire project from GitHub is used in this project as a submodule to help with staying current. 
-Finally you may need to add frameworks to your project such as Core Graphics.
+in your project.  Finally you may need to add frameworks to your project such as Core Graphics.
 
-Once you have the sources files added you can use the example in SSTViewController to set up
+Once you have the source files added you can use the example in SSTViewController to set up
 the activities which are shown by the Activity Sheet. It creates an array of activity items which
 includes an NSString and NSURL value if both fields are populated. A URL is simply added to the
 NSString value for the ADN activities but Twitter and Facebook using them as links. If Felix,
@@ -33,14 +30,15 @@ a new icon for an activity.
 ## What about my favorite ADN app?
 
 More apps can be supported. All that is needed is a URL Scheme with a way to send a new post
-over to the app. Felix, Netbot and Riposte are currently supported. Below are links to their
-docs covering their URL Scheme support.
+over to the app. Felix, Netbot, Riposte and hAppy are currently supported. Below are links to
+their docs covering their URL Scheme support.
 
  * [Felix](http://tigerbears.com/felix/urls.html)
  * [Netbot](http://tapbots.com/blog/development/tweetbot-url-scheme) (Same as Tweetbot)
  * [Riposte](http://riposteapp.net/release-notes.html)
+ * [hAppy](http://dasdom.de/Dominik_Hauser_Development/hAppy_url_schemes.html)
 
-## Return URL Scheme
+## Return URL Scheme (deprecated)
 
 One additional parameter which is sent to the other apps is a value which can be used to return
 to the calling app once the post operation has completed. This way the sequence of sharing returns
@@ -57,6 +55,12 @@ Included within this project (open the Workspace) there is an example ADN Client
 ADN Activities application. It can even be used with the Simulator to show how the interaction
 works between a calling application and a client. The Return URL Scheme is used to complete
 the activity as intended.
+
+## X-Callback-URL
+
+Instead of the Return URL Scheme the code base will be replaced with the [x-callback-url specification](http://x-callback-url.com/specifications/).
+This specification is used by [Google Chrome Mobile](https://developers.google.com/chrome/mobile/docs/ios-links)
+to allow apps to open content in apps made by Google and then return to the originating app.
 
 ## No View Controller
 
