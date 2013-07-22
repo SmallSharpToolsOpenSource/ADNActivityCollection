@@ -1,6 +1,8 @@
 ADN Activity Collection
 =====================
 
+<img src="https://raw.github.com/brennanMKE/ADNActivityCollection/master/ADNActivity.png" width="320px" alt="Screenshot" align="right" />
+
 ## UIActivities to share with App.net (ADN) apps from an Activity Sheet
 
 The Activity Sheet is new iOS 6. It provides for abstractions to share content from apps to 
@@ -95,6 +97,3 @@ where you can find other bits you can use with your development work.
 Brennan Stehling on App.net  
 [@smallsharptools](http://alpha.app.net/smallsharptools)
 
-## Screenshot
-
-<img src="https://raw.github.com/brennanMKE/ADNActivityCollection/master/ADNActivity.png" width="320px" alt="Screenshot" />
