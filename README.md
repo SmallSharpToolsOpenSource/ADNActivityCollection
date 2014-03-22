@@ -71,6 +71,18 @@ warn they user they are about to leave the app though, so a view controller whic
 the message and allow the user to cancel if they choose instead if jumping to another app could
 be added later.
 
+## CocoaPods
+
+ADNActivityCollection is available through [CocoaPods](http://cocoapods.org), to install
+it simply add the following line to your Podfile:
+
+    pod "ADNActivityCollection"
+
+or
+
+    platform :ios, "7.0"
+    pod 'ADNActivityCollection', :git => 'https://github.com/brennanMKE/ADNActivityCollection.git', :tag => '1.0.0'
+
 ## Contributions
 
 Additional ADN clients can be supported on iOS by simply using the current activities as a reference.
