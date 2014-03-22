@@ -1,4 +1,4 @@
-# OptimizedNetworking CHANGELOG
+# ADNActivityCollection CHANGELOG
 
 ## 1.0.0
 

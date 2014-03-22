@@ -45,7 +45,7 @@
         [smilePath closePath];
         [[UIColor whiteColor] setFill];
         [smilePath fill];
-        
+ 
         
         image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();

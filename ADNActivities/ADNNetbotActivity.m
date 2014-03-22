@@ -33,7 +33,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(43, 43), NO, 0.0f);
-        
+
         
         //// Color Declarations
         UIColor* fillColor = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
