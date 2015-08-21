@@ -111,7 +111,6 @@
     return image;
 }
 
-
 - (NSURL *)clientOpenURL {
     if (self.clientURLScheme != nil) {
         // Note: Adding another slash fixes the sharing option with Netbot
